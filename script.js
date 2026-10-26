@@ -166,7 +166,7 @@
   }
 
   /* ---------- rotating words ---------- */
-  const words = ['loud interfaces', 'wild animations', 'fast websites', 'bold experiences'];
+  const words = ['Java web apps', 'servlets that work', 'clean databases', 'bold interfaces'];
   const swap = $('#swap');
   let wi = 0;
   setInterval(() => {

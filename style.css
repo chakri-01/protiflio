@@ -91,7 +91,7 @@ img{max-width:100%;display:block}
 .tag b{width:10px;height:10px;border-radius:50%;background:var(--acid);animation:pulse 1.4s infinite}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(212,255,0,.7)}100%{box-shadow:0 0 0 16px rgba(212,255,0,0)}}
 
-.hero-title{font-family:var(--display);font-weight:400;font-size:clamp(5rem,23vw,22rem);line-height:.82;text-transform:uppercase;letter-spacing:-.01em}
+.hero-title{font-family:var(--display);font-weight:400;font-size:clamp(4rem,19vw,19rem);line-height:.82;text-transform:uppercase;letter-spacing:-.01em}
 .hero-title .line{display:block;overflow:hidden;padding-bottom:.04em}
 .hero-title .ch{display:inline-block;transform:translateY(110%) rotate(8deg);transition:transform 1s var(--ease);transition-delay:calc(var(--i)*.05s + .9s)}
 body.ready .hero-title .ch{transform:none}
@@ -171,7 +171,7 @@ mark{background:var(--acid);color:#000;padding:0 .3em}
 .proj:hover{color:#000;padding-left:1.5rem;padding-right:1rem}
 .p-num{font-family:var(--mono);color:var(--mute)}
 .proj:hover .p-num{color:#000}
-.p-name{font-family:var(--display);font-weight:400;font-size:clamp(2.4rem,8vw,7rem);line-height:1;text-transform:uppercase;transition:letter-spacing .5s var(--ease)}
+.p-name{font-family:var(--display);font-weight:400;font-size:clamp(2rem,6vw,5.5rem);line-height:1;text-transform:uppercase;transition:letter-spacing .5s var(--ease)}
 .proj:hover .p-name{letter-spacing:.03em}
 .p-meta{font-family:var(--mono);font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;text-align:right}
 .p-arrow{font-size:2.4rem;transition:transform .5s var(--ease);justify-self:end}
