@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YOUR NAME — Portfolio</title>
+<meta name="description" content="Portfolio of YOUR NAME — developer & designer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div class="preloader" id="preloader">
+  <div class="pre-count"><span id="preNum">0</span><small>%</small></div>
+  <div class="pre-bar"><i id="preBar"></i></div>
+  <p class="pre-text">LOADING THE NOISE</p>
+</div>
+
+<div class="progress" id="progress"></div>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="grain"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#top" class="logo" data-magnetic>YN<span>.</span></a>
+  <nav class="menu" id="menu">
+    <a href="#details">Details</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#showcase">Showcase</a>
+    <a href="#contact" class="menu-cta">Contact</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Menu"><i></i><i></i></button>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <div class="grid-lines"></div>
+  </div>
+
+  <p class="tag reveal"><b></b> AVAILABLE FOR WORK — 2026</p>
+
+  <h1 class="hero-title" id="heroTitle" aria-label="Your Name">
+    <span class="line" data-split>YOUR</span>
+    <span class="line outline" data-split>NAME</span>
+  </h1>
+
+  <div class="hero-bottom">
+    <p class="hero-sub reveal">
+      I build <em class="swap" id="swap">loud interfaces</em><br>
+      that refuse to be ignored.
+    </p>
+    <div class="hero-actions reveal">
+      <a href="#projects" class="btn btn-solid" data-magnetic>SEE THE WORK <i>↘</i></a>
+      <a href="#contact" class="btn btn-line" data-magnetic>HIT ME UP</a>
+    </div>
+  </div>
+
+  <div class="scroll-hint"><span></span>SCROLL</div>
+</section>
+
+<!-- MARQUEE -->
+<section class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="marquee1">
+    <span>DESIGN</span><span class="star">✸</span><span>DEVELOP</span><span class="star">✸</span><span>ANIMATE</span><span class="star">✸</span><span>BREAK RULES</span><span class="star">✸</span>
+    <span>DESIGN</span><span class="star">✸</span><span>DEVELOP</span><span class="star">✸</span><span>ANIMATE</span><span class="star">✸</span><span>BREAK RULES</span><span class="star">✸</span>
+  </div>
+</section>
+
+<!-- DETAILS -->
+<section class="section details" id="details">
+  <div class="sec-head">
+    <span class="sec-num reveal">01</span>
+    <h2 class="sec-title reveal">DETAILS</h2>
+  </div>
+
+  <div class="details-grid">
+    <div class="photo-wrap reveal">
+      <div class="photo" data-tilt>
+        <!-- ▼ REPLACE assets/me.jpg WITH YOUR PHOTO ▼ -->
+        <img src="assets/me.jpg" alt="Your photo" onerror="this.style.display='none'">
+        <div class="photo-ph"><span>YOUR<br>PHOTO</span></div>
+      </div>
+      <div class="sticker">HELLO<br>WORLD ✦</div>
+    </div>
+
+    <div class="about">
+      <p class="lead reveal">
+        I'm <mark>YOUR NAME</mark> — a developer and designer from <mark>YOUR CITY</mark>.
+        Write one sharp sentence here about what you do and what drives you.
+      </p>
+      <p class="body reveal">
+        Replace this paragraph with your story: where you studied, what you've shipped,
+        what you obsess over. Keep it short, direct, and a little dangerous.
+      </p>
+
+      <ul class="facts">
+        <li class="reveal"><span>Based in</span><b>Your City, Country</b></li>
+        <li class="reveal"><span>Role</span><b>Full-Stack / Front-End Developer</b></li>
+        <li class="reveal"><span>Education</span><b>Your Degree, Your College</b></li>
+        <li class="reveal"><span>Status</span><b class="live">Open to opportunities</b></li>
+      </ul>
+
+      <div class="stats">
+        <div class="stat reveal"><b data-count="10">0</b><span>Projects shipped</span></div>
+        <div class="stat reveal"><b data-count="3">0</b><span>Years building</span></div>
+        <div class="stat reveal"><b data-count="100">0</b><span>% obsession</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section skills" id="skills">
+  <div class="sec-head">
+    <span class="sec-num reveal">02</span>
+    <h2 class="sec-title reveal">SKILLS</h2>
+  </div>
+
+  <div class="skill-cols">
+    <div class="skill-list">
+      <div class="skill reveal"><div class="skill-top"><h3>HTML5</h3><span>90%</span></div><div class="bar"><i data-w="90"></i></div></div>
+      <div class="skill reveal"><div class="skill-top"><h3>CSS3 / Animations</h3><span>85%</span></div><div class="bar"><i data-w="85"></i></div></div>
+      <div class="skill reveal"><div class="skill-top"><h3>JavaScript</h3><span>80%</span></div><div class="bar"><i data-w="80"></i></div></div>
+      <div class="skill reveal"><div class="skill-top"><h3>Your Skill 4</h3><span>70%</span></div><div class="bar"><i data-w="70"></i></div></div>
+      <div class="skill reveal"><div class="skill-top"><h3>Your Skill 5</h3><span>65%</span></div><div class="bar"><i data-w="65"></i></div></div>
+    </div>
+
+    <div class="chips reveal">
+      <span data-magnetic>HTML</span><span data-magnetic>CSS</span><span data-magnetic>JavaScript</span>
+      <span data-magnetic>Git</span><span data-magnetic>GitHub</span><span data-magnetic>Responsive</span>
+      <span data-magnetic>UI / UX</span><span data-magnetic>Figma</span><span data-magnetic>Motion</span>
+      <span data-magnetic>Your Tool</span><span data-magnetic>Your Tool</span><span data-magnetic>+ More</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section projects" id="projects">
+  <div class="sec-head">
+    <span class="sec-num reveal">03</span>
+    <h2 class="sec-title reveal">PROJECTS</h2>
+  </div>
+
+  <div class="proj-list">
+    <a href="#" class="proj reveal" target="_blank" rel="noopener">
+      <span class="p-num">01</span>
+      <h3 class="p-name">PROJECT ONE</h3>
+      <span class="p-meta">HTML · CSS · JS</span>
+      <span class="p-arrow">↗</span>
+      <div class="p-thumb"><span>IMAGE</span></div>
+    </a>
+    <a href="#" class="proj reveal" target="_blank" rel="noopener">
+      <span class="p-num">02</span>
+      <h3 class="p-name">PROJECT TWO</h3>
+      <span class="p-meta">Your Stack</span>
+      <span class="p-arrow">↗</span>
+      <div class="p-thumb"><span>IMAGE</span></div>
+    </a>
+    <a href="#" class="proj reveal" target="_blank" rel="noopener">
+      <span class="p-num">03</span>
+      <h3 class="p-name">PROJECT THREE</h3>
+      <span class="p-meta">Your Stack</span>
+      <span class="p-arrow">↗</span>
+      <div class="p-thumb"><span>IMAGE</span></div>
+    </a>
+    <a href="#" class="proj reveal" target="_blank" rel="noopener">
+      <span class="p-num">04</span>
+      <h3 class="p-name">PROJECT FOUR</h3>
+      <span class="p-meta">Your Stack</span>
+      <span class="p-arrow">↗</span>
+      <div class="p-thumb"><span>IMAGE</span></div>
+    </a>
+  </div>
+</section>
+
+<!-- SHOWCASE (empty on purpose) -->
+<section class="section showcase" id="showcase">
+  <div class="sec-head">
+    <span class="sec-num reveal">04</span>
+    <h2 class="sec-title reveal">SHOWCASE</h2>
+  </div>
+
+  <div class="show-grid">
+    <!-- Replace each .show-item's inner placeholder with <img src="..."> or a <video> -->
+    <figure class="show-item s1 reveal" data-tilt><div class="ph">ADD IMAGE</div><figcaption>Project Name — 01</figcaption></figure>
+    <figure class="show-item s2 reveal" data-tilt><div class="ph">ADD IMAGE</div><figcaption>Project Name — 02</figcaption></figure>
+    <figure class="show-item s3 reveal" data-tilt><div class="ph">ADD IMAGE</div><figcaption>Project Name — 03</figcaption></figure>
+    <figure class="show-item s4 reveal" data-tilt><div class="ph">ADD IMAGE</div><figcaption>Project Name — 04</figcaption></figure>
+    <figure class="show-item s5 reveal" data-tilt><div class="ph">ADD IMAGE</div><figcaption>Project Name — 05</figcaption></figure>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+  <div class="sec-head">
+    <span class="sec-num reveal">05</span>
+    <h2 class="sec-title reveal">CONTACT</h2>
+  </div>
+
+  <a href="mailto:your@email.com" class="big-mail reveal" data-magnetic>
+    <span>LET'S BUILD</span>
+    <span class="outline">SOMETHING LOUD →</span>
+  </a>
+
+  <div class="contact-grid">
+    <form class="form reveal" action="https://formspree.io/f/your-id" method="POST">
+      <label><span>Name</span><input type="text" name="name" placeholder="Your name" required></label>
+      <label><span>Email</span><input type="email" name="email" placeholder="you@email.com" required></label>
+      <label><span>Message</span><textarea name="message" rows="4" placeholder="Tell me everything" required></textarea></label>
+      <button class="btn btn-solid" type="submit" data-magnetic>SEND IT <i>↗</i></button>
+    </form>
+
+    <div class="links reveal">
+      <h3>FIND ME ELSEWHERE</h3>
+      <a href="https://github.com/your-username" target="_blank" rel="noopener" data-magnetic><b>GitHub</b><i>↗</i></a>
+      <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener" data-magnetic><b>LinkedIn</b><i>↗</i></a>
+      <a href="https://instagram.com/your-username" target="_blank" rel="noopener" data-magnetic><b>Instagram</b><i>↗</i></a>
+      <a href="https://x.com/your-username" target="_blank" rel="noopener" data-magnetic><b>X / Twitter</b><i>↗</i></a>
+      <a href="mailto:your@email.com" data-magnetic><b>your@email.com</b><i>↗</i></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="marquee small" aria-hidden="true">
+    <div class="marquee-track" id="marquee2">
+      <span>YOUR NAME ©<em id="year"></em></span><span class="star">✸</span><span>STAY LOUD</span><span class="star">✸</span>
+      <span>YOUR NAME ©<em class="y2"></em></span><span class="star">✸</span><span>STAY LOUD</span><span class="star">✸</span>
+      <span>YOUR NAME ©<em class="y2"></em></span><span class="star">✸</span><span>STAY LOUD</span><span class="star">✸</span>
+    </div>
+  </div>
+  <p>Designed & built by YOUR NAME</p>
+  <a href="#top" data-magnetic>BACK TO TOP ↑</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
